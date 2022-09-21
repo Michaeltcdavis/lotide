@@ -26,6 +26,7 @@ const eqObjects = function (object1, object2) {
         if (Array.isArray(object1[key])) {
           //call eqArrays function and if false, return false
           if (!eqArrays(object1[key], object2[key])) {
+            //console.log('arrays don\'t match'); //TEST POINT
             return false;
           }
         }

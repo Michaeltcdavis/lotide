@@ -13,10 +13,3 @@ const assertArraysEqual = function (actualArr, expectedArr) {
 }
 
 module.exports = assertArraysEqual;
-
-assertArraysEqual([1, 2, 3], [1, 2, 3])
-assertArraysEqual([1, 2, 3], [3, 2, 1])
-assertArraysEqual(["1", "2", "3", '4'], ["1", "2", "3"])
-assertArraysEqual(["1", "2", "3"], ["1", "2", '3', '4'])
-
-//Note: Does not work for nested arrays
